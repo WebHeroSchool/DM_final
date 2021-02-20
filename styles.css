@@ -178,7 +178,6 @@ body {
 
 .speakers {
   background-color: #e3eafe;
-  min-height: 953px;
 }
 
 .speakers__title {
@@ -189,12 +188,15 @@ body {
   text-align: center;
 }
 
+.speakers__wrap {
+  display: block;
+}
+
 .speakers__list {
-  display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-bottom: 29px;
 }
 
 .speakers__list-item {
@@ -207,7 +209,7 @@ body {
 }
 
 .footer {
-  min-height: 250px;
+  padding-bottom: 150px;
   background: #0e1e71;
 }
 
@@ -258,4 +260,192 @@ body {
   width: 52px;
   display: inline-block;
   margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-top: 64px;
+    padding-bottom: 41px;
+    background: url(img/header_mob.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .burger-menu,
+  .burger-menu::before,
+  .burger-menu::after {
+    display: block;
+    position: absolute;
+    width: 23px;
+    height: 3px;
+    background-color: #fff;
+  }
+
+  .burger-menu {
+    top: 38px;
+    right: 29px;
+  }
+
+  .burger-menu::before {
+    content: '';
+    top: -8px;
+  }
+
+  .burger-menu::after {
+    content: '';
+    top: 8px;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .text__title {
+    font: 900 30px/35px Roboto;
+    margin: 0 0 5px;
+  }
+
+  .text__content {
+    font: 900 15px/17px Roboto;
+    margin: 0 0 110px;
+  }
+
+  .text__button {
+    font: 900 15px/17px Roboto;
+    padding: 14px 105px;
+  }
+
+  .buy {
+    padding-top: 22px;
+    padding-bottom: 13px;
+  }
+
+  .buy__title {
+    font: 500 20px/23px Roboto;
+    width: 100%;
+    margin-bottom: 7px;
+  }
+
+  .wrap {
+    display: block;
+  }
+
+  .buy__price {
+    font: 900 20px/23px Roboto;
+    padding: 0 10px 0;
+    margin-bottom: 19px;
+  }
+
+  .buy__button1 {
+    padding: 11px 96px;
+    margin-bottom: 28px;
+  }
+
+  .apply__content {
+    display: block;
+    text-align: center;
+  }
+
+  .apply__text {
+    padding-top: 37px;
+    margin: 0;
+    display: block;
+  }
+
+  .apply__title {
+    font: 900 20px/23px Roboto;
+    margin: 0 0 4px;
+  }
+
+  .apply__timing {
+    font: 900 10px/11px Roboto;
+    margin: 0 0 23px;
+  }
+
+  .apply__img {
+    background: url(img/apply_mob.jpg) no-repeat;
+    min-height: 222px;
+    max-width: 260px;
+    margin: 0 auto 29px;
+    display: block;
+  }
+
+  .button__section {
+    padding-bottom: 37px;
+    display: block;
+  }
+
+  .apply__button {
+    padding: 11px 60px;
+  }
+
+  .speakers__title {
+    font: 500 20px/23px Roboto;
+    padding-top: 35px;
+    margin: 0 0 27px;
+  }
+
+  .speakers__wrap {
+    display: inline;
+  }
+
+  .speakers__list-item {
+    display: none;
+  }
+
+  .speakers__list-item:first-child {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 61px;
+  }
+
+  .speakers__list {
+    padding-bottom: 14px;
+  }
+
+  .footer {
+    padding-bottom: 55px;
+  }
+
+  .map {
+    margin-top: 9px;
+  }
+
+  .map__location {
+    font: 900 8px/9px Roboto;
+  }
+
+  .map__location::before {
+    content: url(img/location_mob.svg) '  ';
+  }
+
+  .contacts {
+    font: 900 8px/9px Roboto;
+    margin-top: 11px;
+  }
+
+  .phone1 {
+    margin-top: 6px;
+  }
+
+  .phone2 {
+    margin-top: 2px;
+  }
+
+  .wa {
+    background: url(img/wa_mob.svg);
+    height: 20px;
+    width: 20px;
+    margin-left: 6px;
+  }
+
+  .tg {
+    background: url(img/tg_mob.svg);
+    height: 20px;
+    width: 25px;
+    margin-left: 0;
+  }
 }
